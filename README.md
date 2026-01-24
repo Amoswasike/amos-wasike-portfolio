@@ -51,49 +51,8 @@ amos-wasike-portfolio/
 8. **Hire Me**: Freelance platforms
 9. **Contact**: Contact form and information
 
-## 🚀 Deployment
 
-### GitHub Pages (Recommended)
 
-1. **Create Repository**:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial portfolio commit"
-   ```
-
-2. **Push to GitHub**:
-   ```bash
-   git remote add origin https://github.com/Amoswasike/amos-wasike-portfolio.git
-   git push -u origin main
-   ```
-
-3. **Enable GitHub Pages**:
-   - Go to repository Settings → Pages
-   - Source: "Deploy from a branch"
-   - Branch: `main`, Folder: `/(root)`
-   - Save (URL will be `https://amoswasike.github.io/amos-wasike-portfolio/`)
-
-### Local Development
-
-```bash
-# Start local server
-python3 -m http.server 8000
-# Visit http://localhost:8000
-```
-
-## 🔧 Customization
-
-- **Colors**: Edit CSS variables in `assets/css/styles.css` (e.g., `--color-primary`)
-- **Content**: Update text in HTML files
-- **Images**: Replace assets in `assets/` folders
-- **Meta Tags**: Update Open Graph and Twitter Card info for social sharing
-
-## 📊 Performance
-
-- **Lighthouse Score**: Target 90+ on mobile/desktop
-- **Image Optimization**: Use WebP format with fallbacks
-- **Code Splitting**: Minimal JS for fast loading
 
 ## 📞 Contact
 
