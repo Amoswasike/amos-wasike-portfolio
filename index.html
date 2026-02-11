@@ -1138,21 +1138,37 @@
       <div class="contact-wrapper">
 
         <!-- Contact Form -->
-        <form class="contact-form reveal scroll-delay-1">
-          <div class="form-group">
-            <input type="text" id="name" name="name" placeholder=" " aria-label="Name" required />
-            <label for="name">Name</label>
-          </div>
-          <div class="form-group">
-            <input type="email" id="email" name="email" placeholder=" " aria-label="Email" required />
-            <label for="email">Email</label>
-          </div>
-          <div class="form-group">
-            <textarea id="message" name="message" placeholder=" " aria-label="Message" rows="5" required></textarea>
-            <label for="message">Message</label>
-          </div>
-          <button type="submit" class="btn-primary">Send Message</button>
-        </form>
+    <form 
+      class="contact-form reveal scroll-delay-1"
+      action="https://formspree.io/f/maqdqpya"
+      method="POST"
+    >
+      <div class="form-group">
+        <input type="text" id="name" name="name" placeholder=" " aria-label="Name" required />
+        <label for="name">Name</label>
+      </div>
+
+      <div class="form-group">
+        <input type="email" id="email" name="email" placeholder=" " aria-label="Email" required />
+        <label for="email">Email</label>
+      </div>
+
+      <div class="form-group">
+        <textarea id="message" name="message" placeholder=" " aria-label="Message" rows="5" required></textarea>
+        <label for="message">Message</label>
+      </div>
+
+      <!-- Optional: Hidden subject for Formspree email -->
+      <input type="hidden" name="_subject" value="New Message from Portfolio Website">
+
+      <!-- Optional: Redirect to Thank You page after submit -->
+      <input type="hidden" name="_next" value="thankyou.html">
+
+      <!-- Optional: Error page redirect -->
+      <input type="hidden" name="_error" value="error.html">
+
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
 
         <!-- Contact Info -->
         <div class="contact-info reveal scroll-delay-2">
